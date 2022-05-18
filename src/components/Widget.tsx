@@ -21,7 +21,7 @@ export function Widget() {
             <div className='relative top-3 left-3 bottom-4'>
                 <span>Bem vindo ao RanchoMHM</span>
             </div>
-            <Popover className='absolute bottom-4  md:bottom-8 md:left-8 flex flex-col items-end' >
+            <Popover className='absolute bottom-4  md:bottom-8 md:left-8 flex flex-col items-start' >
 
                 {/* <div className='absolute bottom-5 right-5'   Nao precisamos de DIV pq POPOVER faz tudo></div> */}
                 {/* { isWidgetOpen && <p>Hello Word</p>}  por usar POPOVER não precisamos fazer if*/}
