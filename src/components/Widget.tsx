@@ -1,4 +1,4 @@
-import { ChatTeardropDots } from 'phosphor-react';
+import { ChatTeardropDots, Horse, Syringe, Calendar } from 'phosphor-react';
 // import { useState } from 'react';
 import { Popover } from '@headlessui/react';
 import { WidgetForm } from './WidgetForm';
@@ -14,9 +14,9 @@ export function Widget() {
 
     return (
         <>
-            <div>
+            <div className='relative top-3 left-3 bottom-4'>
                 <span>Bem vindo ao RanchoMHM</span>
-            </div>
+            </div>          
             <Popover className='absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end' >
 
                 {/* <div className='absolute bottom-5 right-5'   Nao precisamos de DIV pq POPOVER faz tudo></div> */}
@@ -25,6 +25,30 @@ export function Widget() {
                 <Popover.Panel>
                     <WidgetForm />
                 </Popover.Panel>
+                <Popover.Button className='bg-orange-300 rounded-full px-3 h-12 text-white flex items-center group'>
+                    {/* <button onClick={} className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'> */}
+                    <Horse className='w-6 h-6' />
+                    <span className='max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear'>
+                        <span className='pl-2'></span>
+                        Cadastro de Animais
+                    </span>
+                </Popover.Button>
+                <Popover.Button className='bg-red-400 rounded-full px-3 h-12 text-white flex items-center group'>
+                    {/* <button onClick={} className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'> */}
+                    <Syringe className='w-6 h-6' />
+                    <span className='max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear'>
+                        <span className='pl-2'></span>
+                        Carteirinha de Vacinação
+                    </span>
+                </Popover.Button>
+                <Popover.Button className='bg-green-600 rounded-full px-3 h-12 text-white flex items-center group'>
+                    {/* <button onClick={} className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'> */}
+                    <Calendar className='w-6 h-6' />
+                    <span className='max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear'>
+                        <span className='pl-2'></span>
+                        Calendário de Prenhez
+                    </span>
+                </Popover.Button>
                 <Popover.Button className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'>
                     {/* <button onClick={} className='bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group'> */}
                     <ChatTeardropDots className='w-6 h-6' />
