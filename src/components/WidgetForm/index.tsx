@@ -66,10 +66,10 @@ export function WidgetForm() {
 
 
 
-            <footer className="text-xs text-neutral-400">
+            {/* <footer className="text-xs text-neutral-400">
 
                 Feito com amor pelo <a className="underline underline-offset-2" href="https://www.linkedin.com/in/murilomenegasso/">Murilo</a>
-            </footer>
+            </footer> */}
         </div>
     )
 }
